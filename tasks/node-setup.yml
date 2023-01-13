@@ -1,0 +1,6 @@
+# https://github.com/mklement0/n-install
+- name: Install Node and N
+  shell: curl -L https://bit.ly/n-install | bash -s -- -y
+  tags:
+    - install
+    - node

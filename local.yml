@@ -1,0 +1,18 @@
+- hosts: localhost
+  pre_tasks:
+  - name: Update Apt
+    become: true
+    apt:
+      force_apt_get: true
+      update_cache: true
+      state: present
+    tags:
+      - install
+      - core
+  tasks:
+    - import_tasks: tasks/node-setup.yml
+
+# todo
+# install kitty
+# install neovim nighly
+# move config files into place
