@@ -22,7 +22,7 @@
 - name: Stow nvim
   shell: stow nvim
   args:
-    chdir: cfg/
+    chdir: "{{ lookup('env', 'HOME') }}/cfg"
   tags:
     - install
     - stow
@@ -30,7 +30,7 @@
 - name: Stow tmux
   shell: stow tmux
   args:
-    chdir: cfg/
+    chdir: "{{ lookup('env', 'HOME') }}/cfg"
   tags:
     - install
     - stow
@@ -38,7 +38,7 @@
 - name: Stow kitty
   shell: stow kitty
   args:
-    chdir: cfg/
+    chdir: "{{ lookup('env', 'HOME') }}/cfg"
   tags:
     - install
     - stow
