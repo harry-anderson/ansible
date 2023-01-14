@@ -10,13 +10,13 @@
       - install
       - core
   tasks:
-    # - import_tasks: tasks/core.yml
-    # - import_tasks: tasks/node.yml
-    # - import_tasks: tasks/utils.yml
-    # - import_tasks: tasks/nvim.yml
-    # - import_tasks: tasks/tmux.yml
-    # - import_tasks: tasks/stow.yml
+    - import_tasks: tasks/core.yml
+    - import_tasks: tasks/node.yml
+    - import_tasks: tasks/utils.yml
+    - import_tasks: tasks/nvim.yml
+    - import_tasks: tasks/tmux.yml
+    - import_tasks: tasks/stow.yml
     - import_tasks: tasks/rust.yml
-    # - import_tasks: tasks/slack.yml
-    # - import_tasks: tasks/brave.yml
-    # - import_tasks: tasks/insomnia.yml
+    - import_tasks: tasks/slack.yml
+    - import_tasks: tasks/brave.yml
+    - import_tasks: tasks/insomnia.yml

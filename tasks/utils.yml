@@ -1,7 +1,7 @@
 - name: Install Utilities
   become: true
   apt:
-    name: ["kitty", "fzf", "ripgrep", "gh", "xclip", "wireshark"]
+    name: ["kitty", "fzf", "ripgrep", "gh", "xclip", "wireshark", "podman"]
   tags:
     - install
     - core
