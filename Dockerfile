@@ -24,4 +24,5 @@ WORKDIR /home/harry
 FROM harry
 COPY . .
 RUN ansible-playbook $TAGS local.yml
+RUN sudo chown -R harry:harry /home/harry/
 # CMD ["sh", "-c", "ansible-playbook $TAGS local.yml"]

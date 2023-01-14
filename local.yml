@@ -14,7 +14,7 @@
     - import_tasks: tasks/kitty_setup.yml
     - import_tasks: tasks/nvim_setup.yml
     - import_tasks: tasks/tmux_setup.yml
-    - import_tasks: tasks/dot_files.yml
+    - import_tasks: tasks/stow.yml
 
 # todo
 # install kitty
