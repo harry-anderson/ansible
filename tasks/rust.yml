@@ -4,3 +4,27 @@
     - install
     - rust
     - core
+- name: Cargo version
+  shell: cargo -v
+  tags:
+    - install
+    - rust
+    - core
+- name: Install clippy
+  shell: cargo install clippy
+  tags:
+    - install
+    - rust
+    - core
+- name: Add wasm32-unknown-unknown target
+  shell: rustup target add wasm32-unknown-unknown
+  tags:
+    - install
+    - rust
+    - core
+- name: Add aarch64-unknown-linux-gnu
+  shell: rustup target add aarch64-unknown-linux-gnu
+  tags:
+    - install
+    - rust
+    - core
