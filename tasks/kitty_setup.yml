@@ -1,8 +1,0 @@
-# https://sw.kovidgoyal.net/kitty/binary/
-- name: Install Kitty
-  become: true
-  apt: 
-    name: kitty
-  tags:
-    - install
-    - kitty

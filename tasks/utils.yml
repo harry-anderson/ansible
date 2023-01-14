@@ -1,0 +1,9 @@
+# https://sw.kovidgoyal.net/kitty/binary/
+- name: Install Editor tools
+  become: true
+  apt:
+    name: ["kitty", "fzf", "ripgrep", "gh"]
+  tags:
+    - install
+    - neovim
+    - core

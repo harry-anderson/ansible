@@ -10,13 +10,10 @@
       - install
       - core
   tasks:
-    - import_tasks: tasks/node_setup.yml
-    - import_tasks: tasks/kitty_setup.yml
-    - import_tasks: tasks/nvim_setup.yml
-    - import_tasks: tasks/tmux_setup.yml
+    - import_tasks: tasks/core.yml
+    - import_tasks: tasks/node.yml
+    - import_tasks: tasks/utils.yml
+    - import_tasks: tasks/nvim.yml
+    - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/stow.yml
-
-# todo
-# install kitty
-# install neovim nighly
-# move config files into place
+    - import_tasks: tasks/rust.yml

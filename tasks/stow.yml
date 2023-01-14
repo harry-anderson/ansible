@@ -6,6 +6,19 @@
     - install
     - dotfiles
     - stow
+
+- name: Cloning cfg
+  ansible.builtin.git:
+    repo: 'https://github.com/hrryndrsn/cfg.git'
+    dest: "{{ lookup('env', 'HOME') }}/cfg"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: master
+  tags:
+    - install
+    - dotfiles
+    - stow
 - name: Stow nvim
   shell: stow nvim
   args:
