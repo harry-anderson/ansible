@@ -35,3 +35,11 @@
     - install
     - stow
     - tmux
+- name: Stow kitty
+  shell: stow kitty
+  args:
+    chdir: cfg/
+  tags:
+    - install
+    - stow
+    - kitty
