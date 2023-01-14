@@ -24,3 +24,4 @@ WORKDIR /home/harry
 FROM harry
 COPY . .
 RUN ansible-playbook $TAGS local.yml
+# CMD ["sh", "-c", "ansible-playbook $TAGS local.yml"]

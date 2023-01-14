@@ -1,0 +1,24 @@
+- name: Installing stow
+  become: true
+  apt:
+    name: stow
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Stow nvim
+  shell: stow nvim
+  args:
+    chdir: cfg/
+  tags:
+    - install
+    - stow
+    - nvim
+- name: Stow tmux
+  shell: stow tmux
+  args:
+    chdir: cfg/
+  tags:
+    - install
+    - stow
+    - tmux

@@ -10,7 +10,11 @@
       - install
       - core
   tasks:
-    - import_tasks: tasks/node-setup.yml
+    - import_tasks: tasks/node_setup.yml
+    - import_tasks: tasks/kitty_setup.yml
+    - import_tasks: tasks/nvim_setup.yml
+    - import_tasks: tasks/tmux_setup.yml
+    - import_tasks: tasks/dot_files.yml
 
 # todo
 # install kitty

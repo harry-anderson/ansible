@@ -1,0 +1,17 @@
+- name: Unarchive Nvim
+  ansible.builtin.unarchive:
+    src: https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz
+    dest: /tmp/
+    remote_src: yes
+  tags:
+    - install
+    - nvim
+- name: Install nvim
+  become: true
+  shell: mv /tmp/nvim-linux64/bin/nvim /usr/bin/nvim
+  tags:
+    - install
+    - nvim
+
+
+
